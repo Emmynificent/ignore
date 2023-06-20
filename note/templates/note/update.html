@@ -1,0 +1,16 @@
+{% extends 'note/home.html'%}
+<body>
+{% block content%}
+
+<form method="POST">
+    
+
+    {% csrf_token%}
+
+   <h3> {{noteform.as_p}}</h3>
+    <input type='submit' class="submit">
+
+</form>
+<a href="{% url 'journal' %}">Back</a>
+{% endblock %}
+</body>

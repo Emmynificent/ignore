@@ -1,0 +1,64 @@
+<html>
+{% extends 'note/home.html' %}
+
+<!-- {%load static %}
+<link rel="stylesheet" href="{% static 'static/styles.css' %}"> -->
+{% block content %}
+<h2 class="introduction"> Welcome {{request.user|title}} </h2>
+
+<body>
+    <center>
+        <form method="post" name="note-form">
+    
+        {% csrf_token %}
+       <h3> {{note_form.as_p}}</h3>
+        <input type="submit" class="submit">
+
+        </form>
+    </center>
+
+{% for items in notes reversed%}
+
+<h3 class="items"><li> {{items | capfirst }} <a href="{% url 'delete' items.id %}">Delete</a> <a href="{% url 'read' items.id %}">Read</a></li></h3>
+
+{%endfor%}
+
+<div id="logout" ><a href="{% url 'logout' %}"><h2 class="links"> logout </h2></a></div>
+
+</body>
+
+{%endblock%}
+</html>
+
+
+
+<!-- this input assist with setting an alarm -->
+<!-- <input type="datetime-local" id="alarm-time">
+<button onclick="setAlarm()">Set Alarm</button> -->
+<!-- this is a JavaScript code block that is responsible for the alarm -->
+<!-- <script>
+    
+    function setAlarm(){
+        var alarmTime =  document.getElementById('alarm-time').value;
+
+        var alarmDate = new Date(alarmTime);
+
+        var currentTime = new Date();
+
+        var timeRemaining = alarmDate - currentTime;
+
+        setTimeout(function(){
+            alert("Stand up!!!");
+
+
+        }, timeRemaining);
+    }
+
+
+</script> -->
+
+<!-- {% comment %} {% if items == ""%}
+empty
+{%endif%} {% endcomment %}
+
+{% comment %} <a href="{% url 'update' items.id %}">update</a> {% endcomment %} -->

@@ -1,0 +1,16 @@
+{% extends 'note/home.html' %}
+
+<body>
+
+{%block content%}
+<div id="regist">
+<form method="post">
+
+    {%csrf_token%}
+
+   <h4 class="registration" > {{form.as_p}}</h4>
+    <input type="submit" class="submit">
+</form>
+</div>
+{%endblock%}
+</body>

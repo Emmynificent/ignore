@@ -1,0 +1,14 @@
+{% extends 'note/home.html'%}
+<body>
+{% block content%}
+<form method="POST">
+{% csrf_token%} 
+
+    <h3>Do you want to delete {{note.note_title  | capfirst }} ?</h3>
+    
+    <h3><input type="submit" class="submit"> <a href="{% url 'journal' %}">No</a></h3>
+     
+</form>
+
+{%endblock%}
+</body>

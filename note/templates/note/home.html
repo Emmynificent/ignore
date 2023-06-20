@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Note</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
+
+</head>
+{% block content%}
+
+<body>
+
+    
+    <div class="">
+        <h2 id="welcome">Welcome! </h2>
+        <p id="intro">  <b>To Keep the Journal </b></p>
+        
+    </div>
+
+    <div>
+        
+        <h3 id="signup-signin"> click <a href="{% url 'register' %}">here</a> to sign up or click <a href="{% url 'login'%}">here</a> to Login</h3>
+
+    </div>
+
+
+</body>
+
+{% endblock %}
+
+</html>

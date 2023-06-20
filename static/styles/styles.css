@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Comforter-Regular';
+    src: url('fonts/Comforter-Regular.ttf') format('truetype');
+    /* src: url('fonts/Merriweather-Light.ttf') format('truetype'); */
+}
+
+@font-face {
+    font-family: 'MerriweatherBlack';
+    src: url('fonts/Merriweather-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MerriweatherLight';
+    src: url('fonts/Merriweather-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MerriweatherLightItalic';
+    src: url('fonts/Merriweather-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MerriweatherRegular';
+    src: url('fonts/Merriweather-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Bellfast';
+    src: url('fonts/Bellfast.otf') format('OpenTypeFont');;
+}
+
+
+body{
+    margin: auto;
+    text-align: center;
+    background-color:  #025464;
+    font-family: 'Bellfast', sans-serif;
+    font-size:large;
+    color: #FFD4B2;
+}
+
+#intro{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 10p;
+    color: #F8F1F1;
+    font-family: 'Bellfast', sans-serif;
+
+}
+
+.introduction{
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.introduction:hover{
+    color: #F2BE22;
+}
+
+
+#welcome{
+    margin: auto;   
+    margin-top: 100px; 
+    padding-top: 15px;
+    color: #F8F1F1;
+    font-family: 'Comforter-Regular', sans-serif;
+}
+
+
+div{
+    background-color:#E8AA42;
+    
+}
+
+
+div:hover{
+    background-color: #E57C23;
+}
+
+
+#signup-signin{
+    margin: 100px;
+    padding : 10px;
+    color: #F8F1F1;
+    /* border: 100px;
+    border-color: #E8AA42 ;
+*/
+}
+
+
+h3{
+
+    color: #F8F1F1
+
+}
+
+
+.registration{
+    text-align: left;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    font-weight:12px;
+    
+}
+
+#logout{
+    background-color: #7E1717;
+    margin: 150px;
+    margin-top: 0;
+}
+
+#logout:hover{
+    background-color: #FC4F00;
+}
+
+
+.links:hover{
+    color: #F6FA70;
+}

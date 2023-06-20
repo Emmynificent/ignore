@@ -1,0 +1,16 @@
+{% extends 'note/home.html' %}
+
+{% block content%}
+<body>
+<h2>{{note.note_title | title}}</h2>
+<br>
+<br>
+
+{{note.note_content }}
+
+<br>
+<h3><a href="{% url 'update' note.id %}">Edit</a></h3>
+
+<h3><a href="{% url 'journal'%}"> Back</a></h3>
+</body>
+{%endblock%}

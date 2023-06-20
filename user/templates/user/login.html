@@ -1,0 +1,18 @@
+{% extends 'note/home.html' %}
+{% comment %} {% load static %} {% endcomment %}
+{%block content%}
+<body>
+<form method='POST'>
+    {%csrf_token%}
+    <h2 class="login"> Login </h2>
+
+    <h3>Username: <input type="text", name="username", placeholder="enter your username" class="username"></h3>
+    
+    <h3>Password: <input type="password", name="passcode", placeholder="enter password" class="password"><br></h3>
+    <input type="submit" class="submit" >
+
+    <h3>Don't have an account? Sign in <a href = "{% url 'register' %}" class="links"> here</a></h3>
+</form>
+
+</body>
+{%endblock%}
